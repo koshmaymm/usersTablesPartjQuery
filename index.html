@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_content">
+            <h2>Add new person</h2>
+            <form>
+                <label>
+                    <input type="textarea" id="personName" size="40" placeholder="Enter your name" /> </label>
+                <label>
+                    <input type="checkbox" id="checkPersonSuperPower" name="super_power" class="testClass" />Super power</label>
+                <label>
+                    <input type="checkbox" id="checkPersonRich" name="rich" class="testClass" />Rich</label>
+                <label>
+                    <input type="checkbox" id="checkPersonGenius" name="genius" class="testClass" />Genius</label>
+                <label>
+                    <input type="button" id="addId" name="add" value="Add" class="testClass" /> </label>
+            </form>
+            <br />
+            <br />
+            <table id="table" class="table">
+                <thead>
+                    <tr>
+                        <th data-type="string">Name</th>
+                        <th data-type="string">Super Power</th>
+                        <th data-type="string">Rich</th>
+                        <th data-type="string">Genius</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"> </tbody>
+            </table>
+            <input type="button" id="sort1" class="sortButtons" name="SORT" value="Names" />
+            <input type="button" id="sort2" class="sortButtons" name="SORT" value="Super Powers" />
+            <input type="button" id="sort3" class="sortButtons" name="SORT" value="Richs" />
+            <input type="button" id="sort4" class="sortButtons" name="SORT" value="Genius" /> </div>
+        <div class="sidebar">
+            <h1>Sidebar</h1>
+            <h2 id="persons"></h2> </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
